@@ -1,0 +1,18 @@
+<head>
+<script>
+function DataValidation() {
+    if (document.forms["FormName"]["Input"].value == "") {
+        alert("A value needs to be inthe textbox");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+<form name="FormName" onsubmit="return DataValidation()">
+Enter Information
+<input type="text" name="Input">
+<input type="submit" value="Enter">
+</form>
+</body>
+</head>
